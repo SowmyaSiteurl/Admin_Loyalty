@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:icon="@drawable/ic_nature_people_black_24dp"
+        android:id="@+id/nav_Vendors"
+        android:title="Manage Vendors"/>
+    <item
+        android:icon="@drawable/ic_people_black_24dp"
+        android:id="@+id/nav_User"
+        android:title="Manage Users"/>
+
+    <item
+        android:icon="@drawable/ic_payment_black_24dp"
+        android:id="@+id/nav_payments"
+        android:title="Add Payments"/>
+
+    <item
+        android:visible="false"
+        android:icon="@drawable/ic_add_shopping_cart_black_24dp"
+        android:id="@+id/nav_groupmanagement"
+        android:title="Group Management"/>
+
+    <item
+        android:icon="@drawable/ic_redeem_black_24dp"
+        android:id="@+id/nav_vendorsdproduct"
+        android:title="Vendors Products"/>
+
+    <item
+        android:icon="@drawable/ic_favorite_black_24dp"
+        android:id="@+id/nav_redeemedproduct"
+        android:title="Add Redemption Products"/>
+
+    <item
+        android:icon="@drawable/ic_build_black_24dp"
+        android:id="@+id/nav_profile"
+        android:title="Profile"/>
+
+    <item
+        android:icon="@drawable/ic_perm_identity_black_24dp"
+        android:id="@+id/nav_changepassword"
+        android:title="Change Password"/>
+
+    <item
+        android:icon="@drawable/ic_power_settings_new_black_24dp"
+        android:id="@+id/nav_logout"
+        android:title="Logout"/>
+
+</menu>

@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="@color/textcolor"
+    tools:context="siteurl.in.admin_loyalty.Welcome_splashpage">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/splashImage"
+            android:layout_width="wrap_content"
+            android:layout_height="200dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/header"/>
+
+        <TextView
+            android:id="@+id/splashText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:letterSpacing="0.025"
+            android:paddingTop="5dp"
+            android:text="Welcome"
+            android:layout_below="@+id/splashImage"
+            android:textColor="@color/primaryTextColor"
+            android:textStyle="bold"
+            android:textSize="14dp" />
+
+        <TextView
+            android:id="@+id/user_identity"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:letterSpacing="0.025"
+            android:paddingTop="5dp"
+            android:text="Admin"
+            android:layout_below="@+id/splashText"
+            android:textColor="@color/primaryTextColor"
+            android:textStyle="bold"
+            android:textSize="24dp"/>
+
+        </RelativeLayout>
+
+</LinearLayout>

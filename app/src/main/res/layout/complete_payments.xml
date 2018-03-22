@@ -1,0 +1,242 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="siteurl.in.admin_loyalty.CompletePayments">
+
+    <include layout="@layout/actiontoolbar"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <LinearLayout
+        android:padding="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:padding="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+           <!--
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Amount"/>
+
+            <EditText
+                android:inputType="number"
+                android:id="@+id/amountEDT"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="amount"/>-->
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/amtTextinputlayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="10dp"
+                android:textColorHint="@color/colorAccent">
+
+                <EditText
+                    android:id="@+id/amountEDT"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginTop="10dp"
+                    android:backgroundTint="@color/colorAccent"
+                    android:hint="Enter Amount"
+                    android:textColor="@color/colorAccent"
+                    android:textColorHighlight="@color/colorAccent"
+                    android:textColorHint="@color/colorAccent" />
+
+            </android.support.design.widget.TextInputLayout>
+
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:padding="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+           <!--
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Description"/>
+
+            <EditText
+                android:id="@+id/descrEDT"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="description"/>-->
+
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/descrTextinputlayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="10dp"
+                android:textColorHint="@color/colorAccent">
+
+                <EditText
+                    android:id="@+id/descrEDT"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginTop="10dp"
+                    android:backgroundTint="@color/colorAccent"
+                    android:hint="Enter Description"
+                    android:inputType="text"
+                    android:textColor="@color/colorAccent"
+                    android:textColorHighlight="@color/colorAccent"
+                    android:textColorHint="@color/colorAccent" />
+
+            </android.support.design.widget.TextInputLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:padding="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+          <!--  <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Transaction Id"/>
+
+            <EditText
+                android:inputType="number"
+                android:id="@+id/transactionEDT"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Transaction number"/>-->
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/transTextinputlayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="10dp"
+                android:textColorHint="@color/colorAccent">
+
+                <EditText
+                    android:id="@+id/transactionEDT"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginTop="10dp"
+                    android:backgroundTint="@color/colorAccent"
+                    android:hint="Enter Transaction Number"
+                    android:inputType="number"
+                    android:textColor="@color/colorAccent"
+                    android:textColorHighlight="@color/colorAccent"
+                    android:textColorHint="@color/colorAccent" />
+
+            </android.support.design.widget.TextInputLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+<!--
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Payment Date"
+                android:id="@+id/textView" />-->
+
+            <ImageView
+                android:id="@+id/calender_exp"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="20dp"
+                android:src="@drawable/calender" />
+
+           <!-- <EditText
+                android:id="@+id/edt_Expdate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_gravity="center_horizontal"
+                android:layout_toEndOf="@+id/calender_exp"
+                android:layout_toRightOf="@+id/calender_exp"
+                android:focusable="false"
+                android:hint="Select Date" />
+            -->
+
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/dteTextinputlayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="10dp"
+                android:textColorHint="@color/colorAccent">
+
+                <EditText
+                    android:id="@+id/edt_Expdate"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginTop="10dp"
+                    android:backgroundTint="@color/colorAccent"
+                    android:hint="Select Date"
+                    android:textColor="@color/colorAccent"
+                    android:textColorHighlight="@color/colorAccent"
+                    android:textColorHint="@color/colorAccent" />
+
+            </android.support.design.widget.TextInputLayout>
+
+         <!--   <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/primaryTextColor" />
+-->
+
+        </LinearLayout>
+
+        <TextView
+            android:onClick="Completepaymentnow"
+            android:id="@+id/getlogin_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Add Payment"
+            android:textSize="16dp"
+            android:layout_marginTop="50dp"
+            android:textColor="#000"
+            android:textAlignment="center"
+            android:background="@drawable/button_color_change_selectors"
+            android:layout_gravity="center"
+            android:letterSpacing="0.025"
+            android:padding="10dp" />
+
+    </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

@@ -1,0 +1,323 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="siteurl.in.admin_loyalty.AddVendors">
+
+
+    <include layout="@layout/actiontoolbar" />
+
+
+    <!-- <TextView
+         android:layout_width="130dp"
+         android:layout_height="wrap_content"
+         android:layout_gravity="center"
+         android:layout_marginTop="20dp"
+         android:background="@drawable/border"
+         android:letterSpacing="0.025"
+         android:padding="10dp"
+         android:text="Check vendors"
+         android:textAlignment="center"
+         android:textColor="@color/primaryTextColor"
+         android:textSize="16dp"
+         android:visibility="gone" />-->
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="20dp">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_marginLeft="50dp"
+                    android:layout_marginTop="35dp"
+                    android:background="@drawable/ic_perm_identity_black_24dp" />
+
+                <!-- <EditText
+                     android:id="@+id/et_uname"
+                     android:layout_width="match_parent"
+                     android:layout_height="wrap_content"
+                     android:background="#00000000"
+                     android:hint="name"
+                     android:inputType="text"
+                     android:letterSpacing="0.025"
+                     android:padding="12dp"
+                     android:textColor="@color/primaryTextColor"
+                     android:textColorHint="@color/primaryTextColor"
+                     android:textSize="16dp" />-->
+
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/nametilAdmin"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="10dp"
+                    android:textColorHint="@color/colorAccent">
+
+                    <EditText
+                        android:id="@+id/et_uname"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginTop="10dp"
+                        android:backgroundTint="@color/colorAccent"
+                        android:hint="Enter Name"
+                        android:inputType="text"
+                        android:maxLength="15"
+                        android:textColor="@color/colorAccent"
+                        android:textColorHighlight="@color/colorAccent"
+                        android:textColorHint="@color/colorAccent" />
+
+                </android.support.design.widget.TextInputLayout>
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_marginLeft="50dp"
+                    android:layout_marginTop="35dp"
+                    android:background="@drawable/ic_email_black_24dp" />
+
+                <!-- <EditText
+                     android:id="@+id/et_email"
+                     android:layout_width="match_parent"
+                     android:layout_height="wrap_content"
+                     android:background="#00000000"
+                     android:hint="e-mail"
+                     android:inputType="textNoSuggestions"
+                     android:letterSpacing="0.025"
+                     android:padding="12dp"
+                     android:textColor="@color/primaryTextColor"
+                     android:textColorHint="@color/primaryTextColor"
+                     android:textSize="16dp" />-->
+
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/emailtilAdmin"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="10dp"
+                    android:textColorHint="@color/colorAccent">
+
+                    <EditText
+                        android:id="@+id/et_email"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginTop="10dp"
+                        android:backgroundTint="@color/colorAccent"
+                        android:hint="Enter Email"
+                        android:inputType="textEmailAddress"
+                        android:textColor="@color/colorAccent"
+                        android:textColorHighlight="@color/colorAccent"
+                        android:textColorHint="@color/colorAccent" />
+
+                </android.support.design.widget.TextInputLayout>
+
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_marginLeft="50dp"
+                    android:layout_marginTop="35dp"
+                    android:background="@drawable/ic_perm_phone_msg_black_24dp" />
+                <!--
+                                <EditText
+                                    android:id="@+id/et_phone"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:background="#00000000"
+                                    android:hint="phone"
+                                    android:inputType="number"
+                                    android:letterSpacing="0.025"
+                                    android:lines="1"
+                                    android:maxLength="10"
+                                    android:padding="12dp"
+                                    android:textColor="@color/primaryTextColor"
+                                    android:textColorHint="@color/primaryTextColor"
+                                    android:textSize="16dp" />-->
+
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/phonetilAdmin"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="10dp"
+                    android:textColorHint="@color/colorAccent">
+
+                    <EditText
+                        android:id="@+id/et_phone"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginTop="10dp"
+                        android:backgroundTint="@color/colorAccent"
+                        android:hint="Enter PhoneNumber"
+                        android:inputType="phone"
+                        android:textColor="@color/colorAccent"
+                        android:textColorHighlight="@color/colorAccent"
+                        android:textColorHint="@color/colorAccent" />
+
+                </android.support.design.widget.TextInputLayout>
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_marginLeft="50dp"
+                    android:layout_marginTop="35dp"
+                    android:background="@drawable/ic_home_black_24dp" />
+                <!--
+                                <EditText
+                                    android:id="@+id/et_address"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:background="#00000000"
+                                    android:hint="shop name and address"
+                                    android:inputType="text"
+                                    android:letterSpacing="0.025"
+                                    android:padding="12dp"
+                                    android:textColor="@color/primaryTextColor"
+                                    android:textColorHint="@color/primaryTextColor"
+                                    android:textSize="16dp" />-->
+
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/addresstilAdmin"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="10dp"
+                    android:textColorHint="@color/colorAccent">
+
+                    <EditText
+                        android:id="@+id/et_address"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginTop="10dp"
+                        android:backgroundTint="@color/colorAccent"
+                        android:hint="Enter Address"
+                        android:textColor="@color/colorAccent"
+                        android:textColorHighlight="@color/colorAccent"
+                        android:textColorHint="@color/colorAccent" />
+
+                </android.support.design.widget.TextInputLayout>
+                <!--
+                                android:inputType="textMultiLine"
+                                android:maxLines="2"
+                                android:maxLength="50"
+                                -->
+
+
+
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_marginLeft="50dp"
+                    android:layout_marginTop="35dp"
+                    android:background="@drawable/ic_perm_phone_msg_black_24dp" />
+
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/conversiontilAdmin"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="10dp"
+                    android:textColorHint="@color/colorAccent">
+
+                    <EditText
+                        android:id="@+id/et_conversion"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginTop="10dp"
+                        android:backgroundTint="@color/colorAccent"
+                        android:hint="Conversion Ratio"
+                        android:inputType="phone"
+                        android:textColor="@color/colorAccent"
+                        android:textColorHighlight="@color/colorAccent"
+                        android:textColorHint="@color/colorAccent" />
+
+                </android.support.design.widget.TextInputLayout>
+
+            </LinearLayout>
+
+
+            <TextView
+                android:id="@+id/getlogin_tv"
+                android:layout_width="130dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="60dp"
+                android:background="@drawable/button_color_change_selectors"
+                android:letterSpacing="0.025"
+                android:onClick="addNewVendor"
+                android:padding="10dp"
+                android:text="Add Vendor"
+                android:textAlignment="center"
+                android:textColor="@color/primaryTextColor"
+                android:textSize="16dp" />
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>
